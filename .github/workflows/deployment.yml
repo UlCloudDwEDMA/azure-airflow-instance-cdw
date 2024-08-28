@@ -5,8 +5,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     env:
-      ResourceGroupName: github-action-arm-rg
-      ResourceGroupLocation: "australiaeast"
+      ResourceGroupName: rgdevcdwncus02
+      ResourceGroupLocation: "southcentralus"
     steps:
     - uses: actions/checkout@master
     - uses: azure/login@v2
@@ -18,8 +18,8 @@ jobs:
           #!/bin/bash
           az group create --name ${{ env.ResourceGroupName }} --location ${{ env.ResourceGroupLocation }}
           echo "Azure resource group created"
-    - uses: azure/arm-deploy@v2
-      with:
-        resourceGroupName: ${{ env.ResourceGroupName }}
-        template: ./azuredeploy.json
-        parameters: storageAccountType=Standard_LRS
+    # - uses: azure/arm-deploy@v2
+    #   with:
+    #     resourceGroupName: ${{ env.ResourceGroupName }}
+    #     template: ./azuredeploy.json
+    #     parameters: storageAccountType=Standard_LRS
