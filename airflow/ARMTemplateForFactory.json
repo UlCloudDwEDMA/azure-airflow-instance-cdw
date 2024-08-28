@@ -52,7 +52,8 @@
                             "CDW_SNOWFLAKE_URL": "https://app.snowflake.com/central-us.azure/ul_datahub_nonprod/"
                         },
                         "airflowRequirements": [
-                            "azure-storage-blob==12.16.0"
+                            "azure-storage-blob==12.16.0",
+                            "python-tss-sdk==1.2.2"
                         ],
                         "enableAADIntegration": true,
                         "enableTriggerers": false,
