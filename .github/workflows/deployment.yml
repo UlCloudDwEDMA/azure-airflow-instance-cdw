@@ -4,7 +4,7 @@ on:
       - 'main'
     paths:
       - 'ARMTemplateParametersForFactory.json'
-name: Airflow Instance Creation 
+name: Airflow Instance Creation In Azure DataFactory
 jobs:
     build-and-deploy:
       runs-on: ubuntu-latest
