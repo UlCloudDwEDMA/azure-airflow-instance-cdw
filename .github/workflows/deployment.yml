@@ -5,6 +5,7 @@ on:
       - 'main'
     paths:
       - 'ARMTemplateParametersForFactory.json'
+      - 'ARMTemplateForFactory.json'
 name: Airflow Instance Creation 
 jobs:
     build-and-deploy:
