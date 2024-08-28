@@ -42,7 +42,10 @@
                         },
                         "airflowConfigurationOverrides": {
                             "AIRFLOW__SCHEDULER__PARSING_PROCESSES": "8",
-                            "AIRFLOW__CORE__PARALLELISM": "128"
+                            "AIRFLOW__CORE__PARALLELISM": "128",
+                            "AIRFLOW__CORE__MAX_ACTIVE_TASKS_PER_DAG": "90",
+                            "AIRFLOW__WEBSERVER__DAG_DEFAULT_VIEW": "graph",
+                            "AIRFLOW__DATABASE__LOAD_DEFAULT_CONNECTIONS": "False"
                         },
                         "environmentVariables": {
                             "CDW_DAG_HOME": "/usr/local/airflow/dags",
