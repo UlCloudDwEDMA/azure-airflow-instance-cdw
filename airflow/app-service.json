@@ -30,7 +30,7 @@
         },
         "skutier": {
             "type": "string",
-            "allowedValues": ["PremiumV2"],
+            "allowedValues": ["StorageV2"],
             "metadata": {
                 "description": "The Tier of the App Service plan"
             }
